@@ -17,7 +17,7 @@ import {
 } from "components/animations";
 import { ComponentProps, forwardRef, RefAttributes } from "react";
 import { styled } from "styles";
-import { withChildren } from "types/fcc";
+import { withChildren } from "types";
 
 import IconMonochrome from "public/logo_monochrome_white.svg";
 

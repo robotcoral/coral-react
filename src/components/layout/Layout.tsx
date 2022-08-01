@@ -2,11 +2,11 @@ import { styled } from "styles";
 import { FCC } from "types";
 import { Titlebar } from "./Titlebar";
 
-const Main = styled("main", { height: "100%" });
+const Main = styled("main", { flex: "1" });
 
 export const Layout: FCC = ({ children }) => (
   <>
     <Titlebar />
-    <main>{children}</main>
+    <Main>{children}</Main>
   </>
 );

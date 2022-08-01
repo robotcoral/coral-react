@@ -63,10 +63,10 @@ const injectGlobalStyles = globalCss({
     margin: 0,
     padding: 0,
     background: "$bodyBg",
-    height: "100vh",
     color: "$text",
   },
   "html": { margin: 0, padding: 0 },
+  "#__next": { height: "100vh", display: "flex", flexDirection: "column" },
 });
 
 injectGlobalStyles();
