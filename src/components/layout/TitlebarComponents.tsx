@@ -19,6 +19,8 @@ import { ComponentProps, forwardRef, RefAttributes } from "react";
 import { styled } from "styles";
 import { withChildren } from "types/fcc";
 
+import IconMonochrome from "public/logo_monochrome_white.svg";
+
 export const NavigationMenu = styled(Root, {
   position: "relative",
   display: "flex",
@@ -190,6 +192,11 @@ export const IconWrapper = styled("div", {
   textAlign: "center",
   boxShadow: "0 0 0 1px hsla(0, 0%, 0%, .1)",
   marginRight: ".75rem",
+});
+
+export const TitlebarIcon = styled(IconMonochrome, {
+  height: "100%",
+  padding: ".4rem",
 });
 
 export const GroupItem = styled(Item, { position: "relative" });

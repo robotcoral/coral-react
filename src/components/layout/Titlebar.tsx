@@ -11,6 +11,7 @@ import {
   NavigationMenuContent,
   NavigationMenuList,
   NavigationMenuTrigger,
+  TitlebarIcon,
 } from "./TitlebarComponents";
 
 type MenuGroup = {
@@ -89,7 +90,9 @@ export const Titlebar = () => {
 
   return (
     <NavigationMenu>
-      <IconWrapper />
+      <IconWrapper>
+        <TitlebarIcon />
+      </IconWrapper>
 
       <NavigationMenuList>
         {menu.map((group) => (
@@ -99,8 +102,8 @@ export const Titlebar = () => {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ContentList>
-                {group.items.map((item) => {
-                  return item.event ? (
+                {group.items.map((item) =>
+                  item.event ? (
                     <ContentListButtonItem
                       key={item.titleId}
                       onClick={() => triggerEvent(item.event as MenubarEvents)}
@@ -111,8 +114,8 @@ export const Titlebar = () => {
                     <ContentListLink href={item.href || ""} key={item.titleId}>
                       <FormattedMessage id={item.titleId} />
                     </ContentListLink>
-                  );
-                })}
+                  )
+                )}
               </ContentList>
             </NavigationMenuContent>
           </GroupItem>
