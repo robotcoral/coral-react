@@ -1,15 +1,22 @@
 {
+  "settings": {
+    "import/resolver": {
+      "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
+    }
+  },
   "env": {
     "browser": true,
     "es2021": true,
     "node": true
   },
   "extends": [
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:@next/next/recommended",
     "airbnb",
     "prettier"
   ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -17,7 +24,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "plugins": ["@typescript-eslint", "react", "prettier", "formatjs"],
   "rules": {
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
@@ -30,6 +37,34 @@
       {
         "ignoreFunctionalComponents": true
       }
-    ]
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "react/prop-types": "off",
+    "formatjs/no-offset": "error"
   }
 }

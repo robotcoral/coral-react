@@ -1,0 +1,8 @@
+{
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "nuxt.isNuxtApp": false,
+  "i18n-ally.localesPaths": ["src/lang"]
+}
