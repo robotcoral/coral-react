@@ -111,7 +111,12 @@ export const Titlebar = () => {
                       <FormattedMessage id={item.titleId} />
                     </ContentListButtonItem>
                   ) : (
-                    <ContentListLink href={item.href || ""} key={item.titleId}>
+                    <ContentListLink
+                      href={item.href || ""}
+                      key={item.titleId}
+                      target="_blank"
+                      referrerPolicy="no-referrer"
+                    >
                       <FormattedMessage id={item.titleId} />
                     </ContentListLink>
                   )
