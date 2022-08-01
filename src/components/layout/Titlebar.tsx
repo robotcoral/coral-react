@@ -99,8 +99,8 @@ export const Titlebar = () => {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ContentList>
-                {group.items.map((item) =>
-                  item.event ? (
+                {group.items.map((item) => {
+                  return item.event ? (
                     <ContentListButtonItem
                       key={item.titleId}
                       onClick={() => triggerEvent(item.event as MenubarEvents)}
@@ -108,11 +108,11 @@ export const Titlebar = () => {
                       <FormattedMessage id={item.titleId} />
                     </ContentListButtonItem>
                   ) : (
-                    <ContentListLink href={item.href || ""}>
+                    <ContentListLink href={item.href || ""} key={item.titleId}>
                       <FormattedMessage id={item.titleId} />
                     </ContentListLink>
-                  )
-                )}
+                  );
+                })}
               </ContentList>
             </NavigationMenuContent>
           </GroupItem>

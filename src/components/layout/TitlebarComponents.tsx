@@ -15,11 +15,9 @@ import {
   exitToLeft,
   exitToRight,
 } from "components/animations";
-import Link from "next/link";
 import { ComponentProps, forwardRef, RefAttributes } from "react";
 import { styled } from "styles";
 import { withChildren } from "types/fcc";
-import { WithRequired } from "types/withRequired";
 
 export const NavigationMenu = styled(Root, {
   position: "relative",
@@ -167,18 +165,11 @@ const contentLisItemStyles = {
 
 const ContentListButton = styled("button", contentLisItemStyles);
 
-const StyledContentListLink = styled("a", contentLisItemStyles);
-
-export const ContentListLink = forwardRef<
-  HTMLAnchorElement,
-  WithRequired<ComponentProps<typeof StyledContentListLink>, "href">
->(({ href, children, ...props }, forwardedRef) => (
-  <Link href={new URL(href)}>
-    <StyledContentListLink {...props} ref={forwardedRef}>
-      {children}
-    </StyledContentListLink>
-  </Link>
-));
+export const ContentListLink = styled("a", {
+  "color": "inherit",
+  "text-decoration": "none",
+  ...contentLisItemStyles,
+});
 
 export const ContentListButtonItem = forwardRef<
   HTMLButtonElement,
