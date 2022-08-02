@@ -64,8 +64,21 @@
     ],
     "import/prefer-default-export": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
     "react/prop-types": "off",
-    "formatjs/no-offset": "error"
+    "formatjs/no-offset": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["@features/*/*"]
+      }
+    ]
   }
 }

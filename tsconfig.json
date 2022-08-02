@@ -23,6 +23,7 @@
       "constants": ["constants/index.ts"],
       "constants/*": ["constants/*"],
       "context/*": ["context/*"],
+      "features/*": ["features/*"],
       "hooks": ["hooks/index.ts"],
       "hooks/*": ["hooks/*"],
       "lang/*": ["lang/*"],
