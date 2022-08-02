@@ -68,13 +68,13 @@ export const MenubarContextProvider: FCC = ({ children }) => {
     }
   };
 
-  const values = useMemo(
+  cconst values = useMemo(
     () => ({
       triggerEvent,
       addEventListener,
       removeEventListener,
     }),
-    [eventListeners]
+    [addEventListener, removeEventListener, triggerEvent]
   );
 
   return (
