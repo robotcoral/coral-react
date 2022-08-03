@@ -1,4 +1,13 @@
 {
+  "error.identifierMustBeCondition": "TODO",
+  "error.illegalRedefinition": "TODO",
+  "error.nestedCondDefintion": "TODO",
+  "error.nestedSubDefintion": "TODO",
+  "error.noParamAllowed": "TODO",
+  "error.parseError": "TODO",
+  "error.predefinedCondRedefinition": "TODO",
+  "error.predefinedSubRedefinition": "TODO",
+  "error.unknownSubroutineOrCondition": "TODO",
   "menu.copy": "Kopieren",
   "menu.cut": "Ausschneiden",
   "menu.documentation": "Dokumentation",

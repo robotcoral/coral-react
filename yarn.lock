@@ -1020,7 +1020,7 @@
     "@lezer/lr" "^1.0.0"
     style-mod "^4.0.0"
 
-"@codemirror/lint@^6.0.0":
+"@codemirror/lint@6.0.0", "@codemirror/lint@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@codemirror/lint/-/lint-6.0.0.tgz#a249b021ac9933b94fe312d994d220f0ef11a157"
   integrity sha512-nUUXcJW1Xp54kNs+a1ToPLK8MadO0rMTnJB8Zk4Z8gBdrN0kqV7uvUraU/T2yqg+grDNR38Vmy/MrhQN/RgwiA==
@@ -1053,7 +1053,7 @@
     "@codemirror/view" "^6.0.0"
     "@lezer/highlight" "^1.0.0"
 
-"@codemirror/view@^6.0.0":
+"@codemirror/view@6.1.2", "@codemirror/view@^6.0.0":
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/@codemirror/view/-/view-6.1.2.tgz#22dd4f6867581aa09dc1d952253f655c1a44bd91"
   integrity sha512-puUydfKwfmOo+ixtuB+uN/ZpcteEYSnpjHmMaow1sOQhNICsKtGBup3i9ybVqyzDagARRYzSHTWjbdeHqmn31w==
@@ -1642,6 +1642,21 @@
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-compose-refs" "1.0.0"
 
+"@radix-ui/react-tabs@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-tabs/-/react-tabs-1.0.0.tgz#135c67f1f2bd9ada69a3f6e38dd897d459af5fe5"
+  integrity sha512-oKUwEDsySVC0uuSEH7SHCVt1+ijmiDFAI9p+fHCtuZdqrRDKIFs09zp5nrmu4ggP6xqSx9lj1VSblnDH+n3IBA==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/primitive" "1.0.0"
+    "@radix-ui/react-context" "1.0.0"
+    "@radix-ui/react-direction" "1.0.0"
+    "@radix-ui/react-id" "1.0.0"
+    "@radix-ui/react-presence" "1.0.0"
+    "@radix-ui/react-primitive" "1.0.0"
+    "@radix-ui/react-roving-focus" "1.0.0"
+    "@radix-ui/react-use-controllable-state" "1.0.0"
+
 "@radix-ui/react-use-callback-ref@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-use-callback-ref/-/react-use-callback-ref-1.0.0.tgz#9e7b8b6b4946fe3cbe8f748c82a2cce54e7b6a90"
@@ -1710,10 +1725,10 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
 
-"@robotcoral/lang-karol@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@robotcoral/lang-karol/-/lang-karol-0.4.0.tgz#02538e5ed05d259a8f1ca091c6f1ed68eace1ee2"
-  integrity sha512-mLuVE5LXalUNJw8Ztq3YUQ0hmxZNTRStQIEEJ3zzRgcV+dNHPbivJ79mv++gmtm/HBdQ2/LGpENgF2xc9mWyww==
+"@robotcoral/lang-karol@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@robotcoral/lang-karol/-/lang-karol-0.5.1.tgz#f41d9ab673bea81c6636321df47d6bb385a4a72d"
+  integrity sha512-xeh4Cb8sqMlueQyD3bNnmoxFPixg8MaAOUSqu8P7jCE3FuFEj6oil+tl8C6JYG6hkBgBZmY0Iodln3zI3aEHgg==
   dependencies:
     "@lezer/common" "^1.0.0"
     "@lezer/highlight" "^1.0.0"

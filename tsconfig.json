@@ -22,7 +22,7 @@
       "components/*": ["components/*"],
       "constants": ["constants/index.ts"],
       "constants/*": ["constants/*"],
-      "context/*": ["context/*"],
+      "providers/*": ["providers/*"],
       "features/*": ["features/*"],
       "hooks": ["hooks/index.ts"],
       "hooks/*": ["hooks/*"],

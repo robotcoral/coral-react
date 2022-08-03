@@ -1,6 +1,6 @@
 /* eslint-disable arrow-body-style */
-import { SplitView } from "components/splitView";
-import { CodeMirrorPanel } from "features/codemirror";
+import { EditorAndSettingsPanel } from "features/editorAndSettingsPanel";
+import { SplitView } from "features/splitView";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <SplitView>
-        <CodeMirrorPanel />
+        <EditorAndSettingsPanel />
         <div />
       </SplitView>
     </>

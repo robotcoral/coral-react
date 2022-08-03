@@ -1,5 +1,5 @@
-import { MenubarEvents } from "context/menubarContext";
 import { useMenubar } from "hooks";
+import { MenubarEvents } from "providers/menubarContext";
 import { FormattedMessage } from "react-intl";
 import {
   ContentList,

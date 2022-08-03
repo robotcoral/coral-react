@@ -1,9 +1,9 @@
-import { Layout } from "components/layout";
-import { MenubarContextProvider } from "context";
+import { Layout } from "features/layout";
 import de from "lang/de.json";
 import en from "lang/en.json";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
+import { MenubarContextProvider } from "providers";
 import { FC } from "react";
 import { IntlProvider } from "react-intl";
 

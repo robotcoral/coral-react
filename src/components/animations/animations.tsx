@@ -20,6 +20,26 @@ export const exitToLeft = keyframes({
   to: { transform: "translateX(-200px)", opacity: 0 },
 });
 
+export const enterFromBottom = keyframes({
+  from: { transform: "translateY(200px)", opacity: 0 },
+  to: { transform: "translateY(0)", opacity: 1 },
+});
+
+export const enterFromTop = keyframes({
+  from: { transform: "translateY(-200px)", opacity: 0 },
+  to: { transform: "translateY(0)", opacity: 1 },
+});
+
+export const exitToBottom = keyframes({
+  from: { transform: "translateY(0)", opacity: 1 },
+  to: { transform: "translateY(200px)", opacity: 0 },
+});
+
+export const exitToTop = keyframes({
+  from: { transform: "translateY(0)", opacity: 1 },
+  to: { transform: "translateY(-200px)", opacity: 0 },
+});
+
 export const scaleIn = keyframes({
   from: { transform: "rotateX(-30deg) scale(0.9)", opacity: 0 },
   to: { transform: "rotateX(0deg) scale(1)", opacity: 1 },

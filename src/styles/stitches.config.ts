@@ -21,6 +21,7 @@ export const {
     colors: {
       highlight1: "hsl(0, 0%, 93%)",
       highlight2: "hsl(0, 0%, 85%)",
+      highlightColor1: "hsl(304, 100%, 32%)",
       bg: "hsl(0, 0%, 100%)",
       highlightText: "hsl(22, 100%, 69%)",
       bodyBg: "radial-gradient(ellipse at bottom, #a60496, #e88f5a 80%)",

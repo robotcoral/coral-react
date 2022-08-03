@@ -19,14 +19,16 @@ const SplitViewWrapper = styled("div", {
 });
 
 const Divider = styled("div", {
-  width: ".8rem",
-  cursor: "ew-resize",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  fontSize: "2.5rem",
-  lineHeight: ".6rem",
-  userSelect: "none",
+  "width": ".8rem",
+  "cursor": "ew-resize",
+  "display": "flex",
+  "alignItems": "center",
+  "fontSize": "1.25rem",
+  "lineHeight": ".7rem",
+  "userSelect": "none",
+  "textAlign": "center",
+  "color": "white",
+  "&::before": { content: "• • •" },
 });
 
 export const SplitView: FC<{
@@ -100,7 +102,7 @@ export const SplitView: FC<{
 
   return (
     <SplitViewWrapper ref={splitPaneRef}>
-      <Pane width={leftWidth} setWidth={setLeftWidth} minWidth="33%">
+      <Pane width={leftWidth} setWidth={setLeftWidth} minWidth="20%">
         {children[0]}
       </Pane>
       <Divider
@@ -108,10 +110,8 @@ export const SplitView: FC<{
         onMouseDown={onMouseDown}
         onTouchStart={onTouchStart}
         onTouchEnd={onMouseUp}
-      >
-        .<br />.<br />.
-      </Divider>
-      <Pane minWidth="33%">{children[1]}</Pane>
+      />
+      <Pane minWidth="20%">{children[1]}</Pane>
     </SplitViewWrapper>
   );
 };
