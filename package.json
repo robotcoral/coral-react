@@ -31,7 +31,7 @@
     "@radix-ui/react-navigation-menu": "1.0.0",
     "@stitches/react": "1.2.8",
     "framer-motion": "6.5.1",
-    "next": "12.2.4",
+    "next": "13.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-intl": "6.0.5",
